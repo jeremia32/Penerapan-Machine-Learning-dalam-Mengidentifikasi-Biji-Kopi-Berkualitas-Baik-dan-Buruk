@@ -1,0 +1,145 @@
+/* Navbar.css */
+nav {
+  background-color: #151b24;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+nav > .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  width: 35%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 8px;
+  transition: color 0.3s ease;
+}
+
+.menu > ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.menu > ul > li > a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.menu > ul > li > a:hover {
+  color: #ff9800;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+/* Toggle button styling */
+nav > .wrapper > button {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  border: 0;
+  background-color: transparent;
+  color: #fff;
+  padding: 0;
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 1000px) {
+  .menu > ul {
+    display: none;
+  }
+
+  .menu.tampil > ul {
+    display: flex;
+  }
+
+  .menu {
+    text-align: right;
+  }
+
+  nav > .wrapper > button {
+    display: inline;
+  }
+
+  .menu > ul {
+    flex-direction: column;
+    background-color: #000;
+    width: 100%;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    padding: 1rem 0;
+    transition: transform 0.3s ease;
+  }
+
+  .menu.tampil > ul {
+    transform: translateY(0);
+  }
+
+  .menu > ul > li {
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .menu > ul > li > a {
+    display: block;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  .menu > ul > li > a:hover {
+    background-color: #222831;
+  }
+}
+
+/* logo */
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto; /* Memindahkan logo ke kiri */
+
+}
+
+.logo-image {
+  width: 50px; /* Sesuaikan ukuran logo */
+  height: 50px;
+  border-radius: 50%; /* Membuat gambar bulat */
+  margin-right: 30px; /* Memberikan jarak antara logo dan teks */
+}
+
+.logo > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 8px;
+  transition: color 0.3s ease;
+}
