@@ -1,0 +1,104 @@
+header {
+  background-image: url("/src/assets/background.png");
+  height: 80vh;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 5px;
+  text-shadow: 0 0 4px #000;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out; /* Menambahkan transisi */
+}
+
+header:hover {
+  transform: scale(1.02); /* Efek sedikit zoom saat dihover */
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.header-jumbotron {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 2;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.header-jumbotron > img {
+  width: 200px;
+  border-radius: 50%;
+  transition: transform 0.3s ease; /* Efek transisi pada gambar */
+}
+
+.header-jumbotron > img:hover {
+  transform: scale(1.1); /* Sedikit zoom in pada gambar saat dihover */
+}
+
+.header-jumbotron > h3 {
+  color: #fff;
+  margin: 30px 0px 0px 0px;
+  padding: 5px;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5); /* Outline pada teks */
+  animation: fadeInUp 1s ease-in-out; /* Animasi masuk */
+}
+
+.header-jumbotron > p {
+  padding: 5px;
+  margin: 0px 5px 20px 5px;
+  color: #fff;
+  font-size: 1.2rem;
+  opacity: 0;
+  animation: fadeIn 2s ease-out 1s forwards; /* Animasi delay agar masuk belakangan */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header-jumbotron > h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .header-jumbotron > p {
+    font-size: 1rem;
+  }
+}

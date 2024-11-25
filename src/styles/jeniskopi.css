@@ -1,0 +1,5 @@
+/* Buat file: styles.css (atau masukkan ke dalam file CSS yang ada) */
+.vertical-timeline::before {
+  background: #cac3c3; /* Warna lebih gelap untuk garis tengah */
+  width: 1px; /* Tambahkan ketebalan garis */
+}

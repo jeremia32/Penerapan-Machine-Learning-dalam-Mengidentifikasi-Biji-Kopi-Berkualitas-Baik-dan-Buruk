@@ -19,21 +19,19 @@ function Navbarhome() {
       <div className="wrapper">
         <div className="logo">
           <img src={logo} alt="Coffee Logo" className="logo-image" /> {/* Gunakan logo di sini */}
-          <Link to="/">Habornas Coffee</Link>
+          <Link to="/">Habornas arabica </Link>
         </div>
-        <button onClick={toggleMenu}>
-          {statusTampil ? <IoMdClose /> : <FaBarsStaggered />}
-        </button>
+        <button onClick={toggleMenu}>{statusTampil ? <IoMdClose /> : <FaBarsStaggered />}</button>
         <div className={`menu ${statusTampil ? "tampil" : ""}`} onClick={toggleMenu}>
           <ul>
             <li>
-              <HashLink to="/#portfolio">Biji Coffee</HashLink>
+              <HashLink to="/#portfolio">Deteksi</HashLink>
             </li>
             <li>
               <HashLink to="/#about">Tentang</HashLink>
             </li>
             <li>
-              <Link to="/Experience">Sejarah</Link>
+              <Link to="/JenisPage">Jenis Kopi</Link>
             </li>
           </ul>
         </div>

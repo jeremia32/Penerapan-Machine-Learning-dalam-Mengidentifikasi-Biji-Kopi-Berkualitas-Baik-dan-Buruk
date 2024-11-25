@@ -1,0 +1,65 @@
+.deteksi-container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.webcam-section {
+  position: relative;
+}
+
+.video-stream {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 8px;
+}
+
+.scan-buttons {
+  margin-top: 20px;
+}
+
+.action-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+  background-color: #45a049;
+}
+
+.upload-section {
+  margin-top: 40px;
+}
+
+.uploaded-image-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.uploaded-image {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+.result-text {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
