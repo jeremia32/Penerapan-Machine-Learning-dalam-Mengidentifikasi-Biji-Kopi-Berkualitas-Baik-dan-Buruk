@@ -39,35 +39,35 @@ Keunggulan SVM untuk Kasus Ini
 
 ## Project Structure
 
-project-root/
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── styles/
-│   │   └── App.js
-│   ├── public/
-│   └── package.json
-├── backend/
-│   ├── src/
-│   │   ├── models/
-│   │   │   ├── cnn.py
-│   │   │   ├── svm.py
-│   │   │   └── ...
-│   │   ├── api/
-│   │   │   ├── routes.py
-│   │   │   └── ...
-│   │   ├── utils/
-│   │   └── app.py
-│   ├── requirements.txt
-│   └── Dockerfile
-├── dataset/
-│   ├── train/
-│   ├── test/
-│   └── ...
-├── README.md
-├── .gitignore
-└── Dockerfile.dev
+* project-root/
+* ├── frontend/
+* │   ├── src/
+* │   │   ├── components/
+* │   │   ├── pages/
+* │   │   ├── styles/
+* │   │   └── App.js
+* │   ├── public/
+* │   └── package.json
+* ├── backend/
+* │   ├── src/
+* │   │   ├── models/
+* │   │   │   ├── cnn.py
+* │   │   │   ├── svm.py
+* │   │   │   └── ...
+* │   │   ├── api/
+* │   │   │   ├── routes.py
+* │   │   │   └── ...
+* │   │   ├── utils/
+* │   │   └── app.py
+* │   ├── requirements.txt
+* │   └── Dockerfile
+* ├── dataset/
+* │   ├── train/
+* │   ├── test/
+* │   └── ...
+* ├── README.md
+* ├── .gitignore
+* └── Dockerfile.dev
 
 ## Installation and Setup
 ## Instalasi
@@ -84,10 +84,10 @@ project-root/
    Python app.py
 
 ## Contributors
-11422045 - Syahrial Jeremia Sinaga ( D4 SOftWARE ENGINEERING )
-11422001 - Yulanda Pasaribu ( D4 SOftWARE ENGINEERING )
-11422012 - Artha Margareth Sitorus ( D4 SOftWARE ENGINEERING )
-11422023 - Irene Situmorang ( D4 SOftWARE ENGINEERING )
-11422034 - Kevin Renaldi Agustinus Hutajulu ( D4 SOftWARE ENGINEERING )
+* 11422045 - Syahrial Jeremia Sinaga ( D4 SOftWARE ENGINEERING )
+* 11422001 - Yulanda Pasaribu ( D4 SOftWARE ENGINEERING )
+* 11422012 - Artha Margareth Sitorus ( D4 SOftWARE ENGINEERING )
+* 11422023 - Irene Situmorang ( D4 SOftWARE ENGINEERING )
+* 11422034 - Kevin Renaldi Agustinus Hutajulu ( D4 SOftWARE ENGINEERING )
 
 
